@@ -6,7 +6,7 @@ import 'firebase/firebase-firestore';
 
 //For firebase config setting, you should use your own application's information.
 const config = {
-    apiKey: "AIzaSyBPmja2xS_yUca5fwTArCb31xZbxa6LHrE",
+    apiKey: "Your api key",
     authDomain: "react-hooks-firebase-mat-260e6.firebaseapp.com",
     databaseURL: "https://react-hooks-firebase-mat-260e6.firebaseio.com",
     projectId: "react-hooks-firebase-mat-260e6",
