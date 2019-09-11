@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-[connect my app](react-hooks-firebase-mat-260e6.web.app).
+[connect my app](https://react-hooks-firebase-mat-260e6.web.app).
 
 ## Available Scripts
 
