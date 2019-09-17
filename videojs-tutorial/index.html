@@ -6,33 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//vjs.zencdn.net/7.3.0/videojs-matrix.css">
+  <link href="./index.css" rel="stylesheet">
   <script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
 </head>
 <body>
-  <h1>Responsive Video.js Example (v4.3)</h1>
-  <p></p>
-  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" 
-  data-setup='{ "asdf": true }' poster="http://video-js.zencoder.com/oceans-clip.png" >
-    <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
-    <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+  <video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    poster="//vjs.zencdn.net/v/oceans.png"
+    data-setup='{}'
+    muted="muted"
+    >
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+    <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+    <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">
+        supports HTML5 video
+      </a>
+    </p>
   </video>
-  <script>
-    videojs.autoSetup();
-
-    videojs('my_video_1').ready(function() {
-      console.log(this.options());
-
-      var myPlayer = this, id = myPlayer.id();
-      var aspectRatio = 264/640;
-
-      function resizeVideoJS() {
-        var width = document.getElementById(id).parentElement.offsetWidth;
-        myPlayer.width(width).height( width * aspectRatio );
-      }
-
-      resizeVideoJS();
-      window.onresize = resizeVideoJS;
-    });
-  </script>
+  <br>
+  <div id="my-player2" class='video-js'>
+    <div class="vjs-button">Button</div>
+  </div>
+  <script src="./index.js"></script>
 </body>
 </html>
